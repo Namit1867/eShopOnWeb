@@ -10,3 +10,7 @@ public class CatalogBrand : BaseEntity, IAggregateRoot
         Brand = brand;
     }
 }
+
+
+
+namespace Microsoft.eShopWeb.ApplicationCore.Specifications;

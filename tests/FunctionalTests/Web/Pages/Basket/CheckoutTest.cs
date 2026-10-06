@@ -66,3 +66,13 @@ public class CheckoutTest : IClassFixture<TestApplication>
         Assert.Contains("Thanks for your Order!", stringCheckOutResponse);
     }
 }
+
+
+
+public class CatalogItemsSpecification : Specification<CatalogItem>
+{
+    public CatalogItemsSpecification(params int[] ids)
+    {
+        Query.Where(c => ids.Contains(c.Id));
+    }
+}

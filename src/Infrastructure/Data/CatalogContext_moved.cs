@@ -23,5 +23,3 @@ public class CatalogContext : DbContext
     {
         base.OnModelCreating(builder);
         builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-    }
-}
